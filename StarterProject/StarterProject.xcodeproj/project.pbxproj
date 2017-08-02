@@ -22,6 +22,8 @@
 		402973881DB839ED00EC8C32 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402973821DB839EA00EC8C32 /* MainTableViewController.swift */; };
 		6A4F36091F2AF1C300F1FCC7 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F36081F2AF1C300F1FCC7 /* art.scnassets */; };
 		6A4F360B1F2AF21000F1FCC7 /* headViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F360A1F2AF21000F1FCC7 /* headViewController.swift */; };
+		6A52F4C51F317B4A00C43E8B /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 6A52F4C41F317B4A00C43E8B /* Sounds */; };
+		6A52F4C71F317B6300C43E8B /* PlaySoundsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A52F4C61F317B6300C43E8B /* PlaySoundsController.swift */; };
 		E829A8A800A7AFC5A4C5DA7A /* Pods_Starter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3D37560DD979815A53DF1B /* Pods_Starter_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		5831B849867AF94CA117AB75 /* Pods-Starter-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Starter-macOS/Pods-Starter-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		6A4F36081F2AF1C300F1FCC7 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		6A4F360A1F2AF21000F1FCC7 /* headViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = headViewController.swift; sourceTree = "<group>"; };
+		6A52F4C41F317B4A00C43E8B /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		6A52F4C61F317B6300C43E8B /* PlaySoundsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsController.swift; sourceTree = "<group>"; };
 		BC9E019C266AD9823B5E877D /* Pods-Starter-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starter-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Starter-tvOS/Pods-Starter-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,10 +101,12 @@
 		402973241DB81F5A00EC8C32 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6A52F4C41F317B4A00C43E8B /* Sounds */,
 				6A4F36081F2AF1C300F1FCC7 /* art.scnassets */,
 				402973801DB839EA00EC8C32 /* AppDelegate.swift */,
 				402973811DB839EA00EC8C32 /* DeviceViewController.swift */,
 				402973821DB839EA00EC8C32 /* MainTableViewController.swift */,
+				6A52F4C61F317B6300C43E8B /* PlaySoundsController.swift */,
 				402973271DB81F5A00EC8C32 /* GameScene.swift */,
 				4029737D1DB839AF00EC8C32 /* ScanTableViewController.swift */,
 				6A4F360A1F2AF21000F1FCC7 /* headViewController.swift */,
@@ -257,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A52F4C51F317B4A00C43E8B /* Sounds in Resources */,
 				402973791DB8260000EC8C32 /* Main.storyboard in Resources */,
 				6A4F36091F2AF1C300F1FCC7 /* art.scnassets in Resources */,
 				402973391DB81F5B00EC8C32 /* LaunchScreen.storyboard in Resources */,
@@ -430,6 +437,7 @@
 				402973831DB839EA00EC8C32 /* AppDelegate.swift in Sources */,
 				4029737E1DB839AF00EC8C32 /* ScanTableViewController.swift in Sources */,
 				402973841DB839EA00EC8C32 /* DeviceViewController.swift in Sources */,
+				6A52F4C71F317B6300C43E8B /* PlaySoundsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
