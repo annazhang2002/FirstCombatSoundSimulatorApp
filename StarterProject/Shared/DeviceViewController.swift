@@ -29,7 +29,7 @@ class DeviceViewController: UIViewController {
         
     }
     
-    @IBOutlet weak var deviceStatus: UILabel!
+    //@IBOutlet weak var deviceStatus: UILabel!
     //@IBOutlet weak var headView: headViewController!
      let PI : Double = 3.14159265359
      
@@ -52,7 +52,7 @@ class DeviceViewController: UIViewController {
          self.device.led?.flashColorAsync(UIColor.green, withIntensity: 1.0, numberOfFlashes: 3)
          NSLog("We are connected")
          }
-         getDataFromSensor()
+         //getDataFromSensor()
      
      }
      
@@ -70,20 +70,21 @@ class DeviceViewController: UIViewController {
          OperationQueue.main.addOperation {
          switch (self.device.state) {
              case .connected:
-                self.deviceStatus.text = "Connected";
+                print("Connected");
                 self.device.sensorFusion?.mode = MBLSensorFusionMode.imuPlus
              case .connecting:
-                self.deviceStatus.text = "Connecting";
+                print("Connecting");
              case .disconnected:
-                self.deviceStatus.text = "Disconnected";
+                print("Disconnected");
              case .disconnecting:
-                self.deviceStatus.text = "Disconnecting";
+                print("Disconnecting");
              case .discovery:
-                self.deviceStatus.text = "Discovery";
+                print("Discovery");
          }
          }
      }
-     
+    
+    /*
     func getDataFromSensor() {
         device.sensorFusion?.eulerAngle.startNotificationsAsync { (obj, error) in
             self.getFusionValues(obj: obj!)
@@ -94,7 +95,7 @@ class DeviceViewController: UIViewController {
         }
     
     }
-     
+    
      func getFusionValues(obj: MBLEulerAngleData){
      
          let xS =  String(format: "%.02f", (obj.p))
@@ -116,7 +117,8 @@ class DeviceViewController: UIViewController {
      func degrees(_ radian: Double) -> Double {
         return (180 * radian / PI)
      }
-     
+    
+    
      func loadSounds(){
         var soundArray : [String] = []
         for index in 0...3{
@@ -137,7 +139,8 @@ class DeviceViewController: UIViewController {
      }
      
      }
-     
+    
+    
      @IBAction func seagulls(_ sender: UIButton) {
          timer = Timer()
          //startTime = TimeInterval()
@@ -166,5 +169,6 @@ class DeviceViewController: UIViewController {
             timer = nil
         }
      }
+ */
 
 }

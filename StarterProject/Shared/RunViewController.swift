@@ -12,6 +12,8 @@ import MetaWear
 class RunViewController: UIViewController, SendScenarioDelegate {
     
     var scene: Int?
+    var soundArray : [String] = []
+    
     
     var optionsViewController: OptionsViewController?
     
@@ -49,14 +51,14 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         
     }
     
-    /*override func viewWillDisappear(_ animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         //disconnect the sensors when the view disappears
         device.removeObserver(self, forKeyPath: "state")
         device.led?.flashColorAsync(UIColor.red, withIntensity: 1.0, numberOfFlashes: 3)
         device.disconnectAsync()
-    }*/
+    }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         OperationQueue.main.addOperation {
@@ -64,14 +66,20 @@ class RunViewController: UIViewController, SendScenarioDelegate {
             case .connected:
                 self.deviceStatus.text = "Connected";
                 self.device.sensorFusion?.mode = MBLSensorFusionMode.imuPlus
+                print("connected")
+                
             case .connecting:
                 self.deviceStatus.text = "Connecting";
+                print("connecting")
             case .disconnected:
                 self.deviceStatus.text = "Disconnected";
+                print("Disconnected")
             case .disconnecting:
                 self.deviceStatus.text = "Disconnecting";
+                print("Disconnecting")
             case .discovery:
                 self.deviceStatus.text = "Discovery";
+                print("Discovery")
             }
         }
     }
@@ -86,6 +94,9 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         let y = radians(abs(365 - obj.y))
         let z = radians(obj.r)
         
+        print("X: " + String(x))
+        print("Y: " + String(y))
+        print("Z: " + String(z))
         playSoundsController?.updateAngularOrientation(abs(Float(365 - obj.y)))
         
         // Send OSC here
@@ -118,6 +129,11 @@ class RunViewController: UIViewController, SendScenarioDelegate {
                 print("Error on subscribe: \(error)")
         }
         
+        //plays the sounds in the array
+        for sound in soundArray.enumerated() {
+            playSoundsController?.play(index: sound.offset)
+        }
+        
     }
     
     @IBAction func stopPressed(_ sender: UIButton) {
@@ -128,22 +144,36 @@ class RunViewController: UIViewController, SendScenarioDelegate {
                 print("Error on unsubscribe: \(error)")
         }
         
+        //plays the sounds in the array
+        for sound in soundArray.enumerated() {
+            playSoundsController?.stop(index: sound.offset)
+        }
+        
     }
     
     
     func loadSounds() {
         
-        
-        //adding the sound files to an array
-        var soundArray : [String] = []
-        
         /* sounds
-         * 0.wav : sandyRockRunning
-         * 1.wav : gunShots
+         * 0.wav : AK47
+         * 1.wav : Explosion 2
+         * 2.wav : Explosion
+         * 3.wav : Grenade Launcher
+         * 4.wav : Helicopter 2
+         * 5.wav : Helicopter Flyby
+         * 6.wav : Helicopter
+         * 7.wav : Machine Gun 1
+         * 8.wav : Machine Gun 2
+         * 9.wav : Machine Gun 3
+         * 10.wav : Machine Gun 4
+         * 11.wav : Overal Battle
+         * 12.wav : Shotgun
+         * 13.wav : Sniper Rifle
+         * 14.wav : Tank
          */
         
         
-        for index in 0...0 {
+        for index in 0...14 {
             soundArray.append(String(index) + ".wav")
         }
         
@@ -153,12 +183,6 @@ class RunViewController: UIViewController, SendScenarioDelegate {
         
         //put the sounds into specific positions
         playSoundsController?.updatePosition(index: 0, position: AVAudio3DPoint(x: 50, y: 50, z: 0))
-        
-        
-        //plays the sounds in the array
-        for sound in soundArray.enumerated() {
-            playSoundsController?.play(index: sound.offset)
-        }
         
     }
     
