@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Mar-3Z-Bv2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Mar-3Z-Bv2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +16,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mar-3Z-Bv2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dug-M8-x7x">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -59,7 +60,7 @@
                                 <rect key="frame" x="0.0" y="117.5" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Icw-lx-dc2" id="x8e-2x-Wd9">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="74.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="74.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="326A9000-85CB-9195-D9DD-464CFBBAE75A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMd-Wg-5KD">
@@ -125,24 +126,24 @@
                                 <rect key="frame" x="0.0" y="24" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZEW-wz-LCx" id="hRw-ER-YXT">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="84.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="84.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MetaWear" translatesAutoresizingMaskIntoConstraints="NO" id="nSe-fd-aTp">
-                                            <rect key="frame" x="15" y="8" width="50" height="50"/>
+                                            <rect key="frame" x="23" y="11" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="bkQ-Ga-xpm"/>
                                                 <constraint firstAttribute="width" constant="50" id="y7l-dQ-epe"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="326A9000-85CB-9195-D9DD-464CFBBAE75A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMm-bB-tOW">
-                                            <rect key="frame" x="15" y="62" width="221.5" height="13"/>
+                                            <rect key="frame" x="23" y="65" width="221.5" height="13"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="11"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MetaWear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mh-zT-Ajo">
-                                            <rect key="frame" x="73" y="22.5" width="82" height="21"/>
+                                            <rect key="frame" x="81" y="25.5" width="82" height="21"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -163,7 +164,7 @@
                                 <rect key="frame" x="0.0" y="109" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nbx-hf-jjn" id="Cji-TJ-CG1">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="84.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="84.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a MetaWear device to get started!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlG-en-AkV">
@@ -266,19 +267,19 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ng1-fI-Ocq" firstAttribute="trailing" secondItem="BqU-mA-fuX" secondAttribute="trailing" id="58F-H6-xiy"/>
+                            <constraint firstItem="h5K-kc-VFN" firstAttribute="trailing" secondItem="kDm-sL-oRT" secondAttribute="trailing" id="76w-Qw-add"/>
                             <constraint firstItem="BqU-mA-fuX" firstAttribute="trailing" secondItem="kDm-sL-oRT" secondAttribute="trailing" id="8UM-Bh-itW"/>
                             <constraint firstItem="Ng1-fI-Ocq" firstAttribute="top" secondItem="moM-jr-XgN" secondAttribute="bottom" constant="7" id="Cg7-FJ-j6b"/>
                             <constraint firstItem="kDm-sL-oRT" firstAttribute="top" secondItem="BqU-mA-fuX" secondAttribute="bottom" constant="8" symbolic="YES" id="EhH-gz-QHV"/>
                             <constraint firstItem="moM-jr-XgN" firstAttribute="top" secondItem="HeQ-IP-C5H" secondAttribute="bottom" constant="8" symbolic="YES" id="QWT-iA-MfI"/>
                             <constraint firstItem="moM-jr-XgN" firstAttribute="leading" secondItem="6ZF-2c-MfT" secondAttribute="leadingMargin" id="Rgm-U3-LTI"/>
+                            <constraint firstItem="lSt-61-UdU" firstAttribute="top" secondItem="h5K-kc-VFN" secondAttribute="bottom" constant="8" symbolic="YES" id="Roq-Ba-rxY"/>
                             <constraint firstItem="Ng1-fI-Ocq" firstAttribute="leading" secondItem="BqU-mA-fuX" secondAttribute="leading" id="UKe-br-PER"/>
+                            <constraint firstItem="h5K-kc-VFN" firstAttribute="top" secondItem="kDm-sL-oRT" secondAttribute="bottom" constant="8" symbolic="YES" id="W5M-dB-en8"/>
                             <constraint firstItem="Ng1-fI-Ocq" firstAttribute="trailing" secondItem="6ZF-2c-MfT" secondAttribute="trailingMargin" id="anJ-SZ-gHU"/>
-                            <constraint firstItem="lSt-61-UdU" firstAttribute="top" secondItem="h5K-kc-VFN" secondAttribute="bottom" constant="8" symbolic="YES" id="bUO-lV-l3P"/>
-                            <constraint firstItem="kDm-sL-oRT" firstAttribute="leading" secondItem="h5K-kc-VFN" secondAttribute="leading" id="eNv-t6-YcS"/>
+                            <constraint firstItem="h5K-kc-VFN" firstAttribute="leading" secondItem="kDm-sL-oRT" secondAttribute="leading" id="oUi-Rd-tFe"/>
                             <constraint firstItem="moM-jr-XgN" firstAttribute="centerX" secondItem="Ng1-fI-Ocq" secondAttribute="centerX" id="pKN-DY-h98"/>
-                            <constraint firstItem="kDm-sL-oRT" firstAttribute="trailing" secondItem="h5K-kc-VFN" secondAttribute="trailing" id="qAS-Et-AE8"/>
                             <constraint firstItem="BqU-mA-fuX" firstAttribute="leading" secondItem="kDm-sL-oRT" secondAttribute="leading" id="rbD-Wn-TCQ"/>
-                            <constraint firstItem="h5K-kc-VFN" firstAttribute="top" secondItem="kDm-sL-oRT" secondAttribute="bottom" constant="8" symbolic="YES" id="rnc-tY-UET"/>
                             <constraint firstItem="moM-jr-XgN" firstAttribute="leading" secondItem="Ng1-fI-Ocq" secondAttribute="leading" id="vhH-DO-gRX"/>
                             <constraint firstItem="BqU-mA-fuX" firstAttribute="top" secondItem="Ng1-fI-Ocq" secondAttribute="bottom" constant="8" symbolic="YES" id="zoy-wQ-d9h"/>
                         </constraints>
@@ -298,9 +299,4 @@
         <image name="MetaWear" width="157" height="157"/>
         <image name="wifi_d1" width="64" height="64"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
-    </simulatedMetricsContainer>
 </document>
