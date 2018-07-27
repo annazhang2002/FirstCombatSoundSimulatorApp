@@ -93,7 +93,7 @@ class headViewController: SCNView {
         pointerNode.position = SCNVector3(x: 0, y: 0, z: 4)
     }
     
-    func handleTap(_ gestureRecognize: UIGestureRecognizer) {
+    @objc func handleTap(_ gestureRecognize: UIGestureRecognizer) {
         // retrieve the SCNView
         let scnView = self
         

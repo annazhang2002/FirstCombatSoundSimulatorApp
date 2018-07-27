@@ -10,7 +10,6 @@
 		3FE35AF0210A4400005CF6DB /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35AEF210A43FF005CF6DB /* OptionsViewController.swift */; };
 		3FE35AF2210A4407005CF6DB /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35AF1210A4407005CF6DB /* CustomViewController.swift */; };
 		3FE35AF4210A440E005CF6DB /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35AF3210A440E005CF6DB /* RunViewController.swift */; };
-		3FE35AF6210A442B005CF6DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE35AF5210A442B005CF6DB /* Main.storyboard */; };
 		3FE35AFA210A4545005CF6DB /* camo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE35AF9210A4545005CF6DB /* camo.jpg */; };
 		402973391DB81F5B00EC8C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402973371DB81F5B00EC8C32 /* LaunchScreen.storyboard */; };
 		402973601DB81F5B00EC8C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402973281DB81F5A00EC8C32 /* Assets.xcassets */; };
@@ -29,6 +28,7 @@
 		6A52F4C51F317B4A00C43E8B /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 6A52F4C41F317B4A00C43E8B /* Sounds */; };
 		6A52F4C71F317B6300C43E8B /* PlaySoundsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A52F4C61F317B6300C43E8B /* PlaySoundsController.swift */; };
 		6AC20611206387F90033A71E /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC20610206387F90033A71E /* libicucore.tbd */; };
+		C52D6B2F210BB8D30029E9E6 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52D6B2E210BB8D30029E9E6 /* Main2.storyboard */; };
 		E829A8A800A7AFC5A4C5DA7A /* Pods_Starter_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3D37560DD979815A53DF1B /* Pods_Starter_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,6 @@
 		3FE35AEF210A43FF005CF6DB /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		3FE35AF1210A4407005CF6DB /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		3FE35AF3210A440E005CF6DB /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
-		3FE35AF5210A442B005CF6DB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../Desktop/MetaWear/FirstCombatSoundSimulator/iOS/Main.storyboard; sourceTree = "<group>"; };
 		3FE35AF9210A4545005CF6DB /* camo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camo.jpg; sourceTree = "<group>"; };
 		402973281DB81F5A00EC8C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4029732D1DB81F5B00EC8C32 /* StarterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +55,7 @@
 		6A52F4C41F317B4A00C43E8B /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		6A52F4C61F317B6300C43E8B /* PlaySoundsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsController.swift; sourceTree = "<group>"; };
 		6AC20610206387F90033A71E /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/lib/libicucore.tbd; sourceTree = DEVELOPER_DIR; };
+		C52D6B2E210BB8D30029E9E6 /* Main2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 		4029732F1DB81F5B00EC8C32 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3FE35AF5210A442B005CF6DB /* Main.storyboard */,
+				C52D6B2E210BB8D30029E9E6 /* Main2.storyboard */,
 				402973371DB81F5B00EC8C32 /* LaunchScreen.storyboard */,
 				4029733A1DB81F5B00EC8C32 /* Info.plist */,
 			);
@@ -230,6 +230,7 @@
 					4029732C1DB81F5A00EC8C32 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TX52L3TFYW;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 					4029733E1DB81F5B00EC8C32 = {
@@ -271,7 +272,7 @@
 			files = (
 				6A52F4C51F317B4A00C43E8B /* Sounds in Resources */,
 				6A4F36091F2AF1C300F1FCC7 /* art.scnassets in Resources */,
-				3FE35AF6210A442B005CF6DB /* Main.storyboard in Resources */,
+				C52D6B2F210BB8D30029E9E6 /* Main2.storyboard in Resources */,
 				402973391DB81F5B00EC8C32 /* LaunchScreen.storyboard in Resources */,
 				402973601DB81F5B00EC8C32 /* Assets.xcassets in Resources */,
 				3FE35AFA210A4545005CF6DB /* camo.jpg in Resources */,
@@ -602,6 +603,8 @@
 				PRODUCT_NAME = StarterProject;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "/Users/martinjaroszewicz/Dropbox/COSMOS\\ 17/COSMOS\\ Examples\\ Swift/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/** \"$(SRCROOT)/MetatoneOSC-master\"";
 			};
@@ -621,6 +624,8 @@
 				PRODUCT_NAME = StarterProject;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "/Users/martinjaroszewicz/Dropbox/COSMOS\\ 17/COSMOS\\ Examples\\ Swift/MetaWear-SDK-iOS-macOS-tvOS-master/StarterProject/Shared/** \"$(SRCROOT)/MetatoneOSC-master\"";
 				VALIDATE_PRODUCT = YES;

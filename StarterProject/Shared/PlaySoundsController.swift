@@ -65,7 +65,7 @@ class PlaySoundsController {
             }
             //Second: we need to load the sound into a buffer
             
-            buffer = AVAudioPCMBuffer(pcmFormat: audioFile.processingFormat, frameCapacity: AVAudioFrameCount(audioFile.length))
+            buffer = AVAudioPCMBuffer(pcmFormat: audioFile.processingFormat, frameCapacity: AVAudioFrameCount(audioFile.length))!
             
             do {
                 try audioFile.read(into: buffer)
